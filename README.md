@@ -1,2 +1,2 @@
-This is about Records relation in database practice
+This is about records relations in database practice
 
