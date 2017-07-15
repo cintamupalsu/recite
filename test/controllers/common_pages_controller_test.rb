@@ -19,5 +19,9 @@ class CommonPagesControllerTest < ActionController::TestCase
     assert_select "title", "About | Hadith Open"
   end
   
-  
+  test "should get contact" do
+    get :contact
+    assert_response :success
+    assert_select "title", "Contact | Hadith Open"
+  end
 end

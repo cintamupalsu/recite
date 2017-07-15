@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   root 'common_pages#home'
 
-  get 'common_pages/help'
+  get 'help' => 'common_pages#help'
 
-  get 'common_pages/about'
+  get 'about' => 'common_pages#about'
+  
+  get 'contact' => 'common_pages#contact'
+  
+  get 'signup' => 'users#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
