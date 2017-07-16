@@ -4,14 +4,18 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@font-face {
+    font-family: 'castleT';
+    src: url(font-path('castleT.ttf') + '?v=4.4.0');
+    src: url(font-path('castleT.ttf') + '?v=4.4.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
-/* mixing, variables, etc. */
-$gray-medium-light: #eaeaea;
 
 .common_pages {
 	padding-top: 60px;
-	
 	section {
 		overflow: auto;
 	}
@@ -43,7 +47,7 @@ $gray-medium-light: #eaeaea;
 	
 	h2 {
 		font-size: 1.2em;
-		letter-spacing: -1px;
+		letter-spacing: -1px;		
 		margin-bottom: 30px;
 		text-align: center;
 		font-weight: normal;
@@ -56,67 +60,11 @@ $gray-medium-light: #eaeaea;
 	}
 	
 	/* header */
-	#logo {
-		float: left;
-		margin-right: 10px;
-		font-size: 1.7em;
-		color: #fff;
-		text-transform: uppercase;
-		letter-spacing: -1px;
-		padding-top: 2px;
-		font-weight: bold;
-		padding-bottom: 2px;
-		
-		&:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-	
-	#logotext {
-		float: left;
-		margin-right: 10px;
-		font-size: 1.7em;
-		color: skyblue;
-		text-transform: uppercase;
-		letter-spacing: -1px;
-		padding-top: 9px;
-		font-weight: bold;
-		
-	}
-
 
 	
-	/* Footer */
-	footer {
-		margin-top: 45px;
-		padding-top: 5px;
-		border-top: 1px solid $gray-medium-light;
-		color: #777;
-		
-		small {
-			float: left;
-		}
-		
-		ul {
-			float: right;
-			list-style: none;
-			
-			li {
-				float: left;
-				margin-left: 15px;
-			}
-		}
-		
-		a {
-			color: #555;
-		}
-	
-		a:hover {
-			color: #222;
-		};
 
-	}
+	
+	
 	
 	
 	
