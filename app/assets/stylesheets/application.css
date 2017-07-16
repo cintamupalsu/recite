@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+config.assets.paths << "#{Rails}/vendor/assets/fonts"
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
