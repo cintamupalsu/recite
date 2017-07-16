@@ -16,6 +16,7 @@
 /* mixing, variables, etc. */
 $gray-medium-light: #eaeaea;
 /* header */
+
 #logo {
 	float: left;
 	margin-right: 10px;
@@ -80,7 +81,16 @@ footer {
 
 
 .common_pages {
+
 	padding-top: 60px;
+/*	.container {
+	    width: 100%;
+	    height: 60px;
+	    background-size: 60px 60px;
+	    background-image: url('tile.jpg');
+	    background-blend-mode: color-dodge;
+	}
+*/	
 	section {
 		overflow: auto;
 	}

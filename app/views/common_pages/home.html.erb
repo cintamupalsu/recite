@@ -1,10 +1,45 @@
 <% provide(:title, "Home") %>
 <div class="center jumbotron">
-	
+	<%= image_tag('basmalah.png', :size => '300x80', :alt => 'headlog', :id => 'basmalah') %>
 	<h1>Hadith Open</h1>
 	<h2>
 		This is the home page for the hadith open.com
 	</h2>
 	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-info"%>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      	<%= image_tag('muhammad.png', :size => '200x80', :alt => 'headlog', :id => 'basmalah') %>
+      <div class="caption">
+        <h3>Hot hadith</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Read</a> <a href="#" class="btn btn-default" role="button">Rank</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      	<%= image_tag('muhammad.png', :size => '200x80', :alt => 'headlog', :id => 'basmalah') %>
+      <div class="caption">
+        <h3>Hadith of the year</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Read</a> <a href="#" class="btn btn-default" role="button">Rank</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      	<%= image_tag('muhammad.png', :size => '200x80', :alt => 'headlog', :id => 'basmalah') %>
+      <div class="caption">
+        <h3>Most trusted hadith</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Read</a> <a href="#" class="btn btn-default" role="button">Rank</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 
