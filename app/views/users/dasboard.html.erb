@@ -1,0 +1,81 @@
+<% provide(:title, @user.name) %>
+<!--Selected Topic Content Column-->
+<div class="row">
+	<!-- Content Post-->	
+	<div class="col-lg-8">
+		<h1>Hadith Title</h1>
+		
+		<p class="lead">
+			<%= gravatar_for @user %> by <%= @user.name %>
+		</p>
+		
+	
+		<!-- Date/Time -->
+		<p><span class="glyphicon gliphicon-time"></span>Posted on <%= localize(@user.created_at, :format => :long) %></p>
+		
+	
+		<!-- Image if any -->
+		
+		<hr>
+		<p class="lead"> Arabic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?
+		</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+		<hr>
+		<div class="well">
+			<h4> Leave a Comment: </h4>
+            <form role="form">
+            	<div class="form-group">
+                	<textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+         </div>
+         <hr>
+		 
+         <div class="media">
+             <a class="pull-left" href="#">
+                 <%= gravatar_for @user %> 
+             </a>
+             <div class="media-body">
+                 <h4 class="media-heading">1st Comment
+                     <small>August 25, 2014 at 9:30 PM</small>
+                 </h4>
+				 <h5>
+                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			 	</h5>
+             </div>
+         </div>
+
+         <!-- Comment -->
+         <div class="media">
+             <a class="pull-left" href="#">
+                 <%= gravatar_for @user %> 
+             </a>
+             <div class="media-body">
+                 <h4 class="media-heading">2nd Comment
+                     <small>August 25, 2014 at 9:30 PM</small>
+                 </h4>
+				 <h5>
+                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			 	 </h5>
+				 <!-- Nested Comment -->
+                 <div class="media">
+                     <a class="pull-left" href="#">
+                         <%= gravatar_for @user %> 
+                     </a>
+                     <div class="media-body">
+                         <h4 class="media-heading">1st reply on 2nd comment.
+                             <small>August 25, 2014 at 9:30 PM</small>
+                         </h4>
+						 <h5>
+                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                     	 </h5>
+					 </div>
+                 </div>
+                 <!-- End Nested Comment -->
+             </div>
+         </div>
+			
+	</div>
+	
+</div>

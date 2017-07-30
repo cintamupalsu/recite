@@ -11,7 +11,132 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@mixin box_sizing{
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 .users {
 	padding-top: 60px;
+	h1 {
+		font-size: 3em;
+		letter-spacing: -2px;
+		margin-bottom: 30px;
+		text-align: center;
+		font-family: "castleT";
+	}
+	aside {
+		section.user_info{
+			margin-top: 20px;
+		}
+	}
+	
+	section {
+		padding: 10px 0;
+		margin-top: 20px;
+		&:first-child {
+			border: 0;
+			padding-top: 0;
+		};
+		span{
+			display: block;
+			margin-bottom: 3px;
+			line-height: 1;
+		}
+		h1{
+			font-size: 1.4em;
+			text-align: left;
+			letter-spacing: -1px;
+			margin-bottom: 3px;
+			margin-top: 0px;
+		}
+	}
+	
+	.gravatar {
+		float: left;
+		margin-right: 10px;
+	}
+	
+	.gravatar-edit {
+		margin-top: 15px;
+	}
+	
+	p {
+		font-size: 1.1em;
+		line-height: 1.7em;
+
+	}
+	h5 {
+		font-family: "castleTLig";
+		font-size: 1.2em;		
+		font-weight: normal;
+	}
+	
+	/* form */
+	input, textarea, select, .uneditable-input {
+	
+		border: 1px solid #bbb;
+		width: 100%;
+		margin-bottom: 15px;
+		@include box_sizing;
+	}
+	input{
+		height: auto !important;
+	}
+	
+	#error_explanation{
+		color: red;
+		ul{
+			color: red;
+			margin: 0 0 30px 0;
+		}
+	}
+	.field_with_errors{
+		@extend .has-error;
+		.form-control {
+			color: $state-danger-text;
+		}
+	}
+	
+	/*@media(min-width:768px) {
+	    .side-nav {
+	        position: fixed;
+	        top: 51px;
+	        left: 225px;
+	        width: 225px;
+	        margin-left: -225px;
+	        border: none;
+	        border-radius: 0;
+	        overflow-y: auto;
+	        background-color: #222;
+	        bottom: 0;
+	        overflow-x: hidden;
+	        padding-bottom: 40px;
+	    }
+
+	    .side-nav>li>a {
+	        width: 225px;
+	    }
+
+	    .side-nav li a:hover,
+	    .side-nav li a:focus {
+	        outline: none;
+	        background-color: #000 !important;
+	    }
+	}
+
+	.side-nav>li>ul {
+	    padding: 0;
+	}
+
+	.side-nav>li>ul>li>a {
+	    display: block;
+	    padding: 10px 15px 10px 38px;
+	    text-decoration: none;
+	    color: #999;
+	}
+
+	.side-nav>li>ul>li>a:hover {
+	    color: #fff;
+	} */
 }
