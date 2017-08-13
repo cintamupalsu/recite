@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
                      uniqueness: {case_sensitive: false}
                      
   has_secure_password
-  validates :password, length: {minimum: 6}
+  validates :password, length: {minimum: 6}, allow_blank: true # allow blank true is for edit section, for create section will handle with has_secure_password
   
   #return the hash digest of the given string.
   def User.digest(string)
@@ -38,6 +38,5 @@ class User < ActiveRecord::Base
   def forget
     update_attribute(:remember_digest, nil)
   end
-  
   
 end
