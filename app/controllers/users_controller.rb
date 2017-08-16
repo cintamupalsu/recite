@@ -18,9 +18,13 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user  #ketika bikin account baru, bisa langsung login dengan call log_in @user (method di sessions_helper), jadi langsung bikin cookie untuk session
-      flash[:success] = "Welcome to the Hadits Open. Tools for administering your hadist collection"
-      redirect_to @user
+      #log_in @user  #ketika bikin account baru, bisa langsung login dengan call log_in @user (method di sessions_helper), jadi langsung bikin cookie untuk session
+      #UserMailer.account_activation(@user).deliver_now
+      @user.send_activation_email
+      #flash[:success] = "Welcome to the Hadits Open. Tools for administering your hadist collection"
+      flash[:info] = "Please check your email to activate your account."
+      #redirect_to @user
+      redirect_to root_url
     else
       render 'new'
     end
