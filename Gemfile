@@ -36,6 +36,7 @@ gem 'bcrypt'
 gem 'faker'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
@@ -64,6 +65,5 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'fog-aws'
   #gem 'puma'
 end
