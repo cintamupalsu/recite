@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create!(name: "Arief Maulana",
   email: "maulanamania@gmail.com",
-  password: "WucherioB4ncrofti",
-  password_confirmation: "WucherioB4ncrofti",
+  password: "T4jmahal",
+  password_confirmation: "T4jmahal",
   admin: true,
   activated: true,
   activated_at: Time.zone.now)
@@ -23,4 +23,10 @@ User.create!(name: "Arief Maulana",
     password_confirmation: password,
     activated: true,
     activated_at: Time.zone.now)
+end
+
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(5)
+  users.each{|user| user.microposts.create!(content: content)}
 end
