@@ -1,0 +1,4 @@
+aws_access_key_id: "AKIAIRPV6XTR5GBI2JOQ"
+aws_secret_access_key: "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"
+production:
+	aws_bucket: "openhadith"
