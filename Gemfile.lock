@@ -213,15 +213,15 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap-will_paginate
   byebug
-  carrierwave (= 0.10.0)
+  carrierwave
   coffee-rails (~> 4.1.0)
   faker
-  fog (= 1.23.0)
+  fog
   guard-minitest
   jbuilder (~> 2.0)
   jquery-rails
   mini_backtrace
-  mini_magick (= 3.8.0)
+  mini_magick
   minitest-reporters
   net-ssh
   pg
