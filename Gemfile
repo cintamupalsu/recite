@@ -39,6 +39,7 @@ gem 'mini_magick', '3.8.0'
 gem 'fog',          '1.23.0'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'net-ssh'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
