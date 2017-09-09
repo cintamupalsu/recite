@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  follower: holil
+  followed: falaq
+
+two:
+  follower: holil
+  followed: bambang
+
+three:
+  follower: iman
+  followed: holil
+
+two:
+  follower: falaq
+  followed: holil

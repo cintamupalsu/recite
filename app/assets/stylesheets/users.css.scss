@@ -17,7 +17,7 @@
 	box-sizing: border-box;
 }
 .users {
-	padding-top: 60px;
+	padding-top: 70px;
 	h1 {
 		font-size: 3em;
 		letter-spacing: -2px;
@@ -70,6 +70,51 @@
 		font-family: "castleTLig";
 		font-size: 1.2em;		
 		font-weight: normal;
+	}
+	.stats {
+		overflow: auto;
+		margin-top: 0;
+		padding: 0;
+		a {
+			float: left;
+			padding: 0 10px;
+			border-left: 1px solid $gray-light;
+			color: gray;
+			&:first-child {
+				padding-left: 0;
+				border: 0;
+			};
+			&:hover {
+				text-decoration: none;
+				color: blue;
+			};
+		}
+		strong {
+			display: block;
+		}
+	}
+	.stats_gravure {
+		overflow: auto;
+		margin-top: 0;
+		padding: 0px;
+		a {
+			float: left;
+			padding: 0 5px;
+			padding-top: 10px;
+			//border-left: 1px solid $gray-light;
+			//color: gray;
+			//&:first-child {
+			//	padding-left: 0;
+			//	border: 0;
+			//};
+			&:hover {
+				text-decoration: none;
+				color: blue;
+			};
+		}
+		strong {
+			display: block;
+		}
 	}
 	
 	/* form */
