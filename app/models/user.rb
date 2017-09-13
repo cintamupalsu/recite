@@ -82,8 +82,14 @@ class User < ActiveRecord::Base
   
   #Defines a proto-feed
   #See "Following users" for the full implementation
+  # Returns a user's status feed
   def feed
-    Micropost.where("user_id = ?", id)
+    #Micropost.where("user_id = ?", id)
+    #Micropost.where("user_id IN (?) OR user_id = ?", following_ids, id)
+    #Micropost.where("user_id IN (:following_ids) OR user_id = (user_id)", following_ids: following_ids, user_id: id)
+    following_ids = "SELECT followed_id FROM relationships WHERE follower_id = :user_id"
+    Micropost.where("user_id IN (#{following_ids}) OR user_id = :user_id", user_id: id)
+    
   end
   
   #Follows a user

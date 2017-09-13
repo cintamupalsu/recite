@@ -1,5 +1,5 @@
 module SessionsHelper
-  #helper is used to implement these module on all controller
+  #helper is used to implement these modules on all controller
   
   #login in the given user.
   def log_in(user)
