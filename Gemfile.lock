@@ -128,6 +128,7 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.12.1)
+    net-ssh (4.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     pg (0.21.0)
@@ -222,6 +223,7 @@ DEPENDENCIES
   mini_backtrace
   mini_magick
   minitest-reporters
+  net-ssh
   pg
   rails (= 4.2.5)
   rails_12factor
